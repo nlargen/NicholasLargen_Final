@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Fkr-pQ-K1L">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--RegisterVC-->
+        <scene sceneID="V30-uG-j2E">
+            <objects>
+                <viewController storyboardIdentifier="RegisterVC" id="aKp-fc-KSJ" customClass="RegisterVC" customModule="BibleBooks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XBv-vc-sHc"/>
+                        <viewControllerLayoutGuide type="bottom" id="nIz-Yt-d5T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZT1-zD-yk4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mcI-AD-LnZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="RegisterVC" id="hUh-Mu-hM6">
+                                        <barButtonItem key="leftBarButtonItem" title="cancel" id="L7Y-jl-rIs">
+                                            <connections>
+                                                <action selector="cancelButtonPressed:" destination="aKp-fc-KSJ" id="9Jh-mt-XWj"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="create" id="gPj-eB-b7w">
+                                            <connections>
+                                                <action selector="createButtonPressed:" destination="aKp-fc-KSJ" id="Ktn-zE-1QO"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8er-GD-Zwv">
+                                <rect key="frame" x="20" y="80" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CYQ-DW-FWG">
+                                <rect key="frame" x="20" y="126" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EuA-Gn-xJ7">
+                                <rect key="frame" x="20" y="174" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3V-Fs-nLd">
+                                <rect key="frame" x="20" y="219" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="G8k-SU-RbC">
+                                <rect key="frame" x="169" y="256" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="confirmPasswordTF" destination="EuA-Gn-xJ7" id="m9X-ga-8p8"/>
+                        <outlet property="emailTF" destination="O3V-Fs-nLd" id="vvN-e4-k8s"/>
+                        <outlet property="passwordTF" destination="CYQ-DW-FWG" id="uGl-jd-4Lo"/>
+                        <outlet property="theSpinner" destination="G8k-SU-RbC" id="sL1-aY-qFZ"/>
+                        <outlet property="usernameTF" destination="8er-GD-Zwv" id="tZB-4C-ngw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mzz-mB-SEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-306.5" y="-381.5"/>
+        </scene>
+        <!--AttemptsVC-->
+        <scene sceneID="vD5-FF-hDW">
+            <objects>
+                <viewController storyboardIdentifier="AttemptsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vna-f5-NRm" customClass="AttemptsVC" customModule="BibleBooks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aIi-DY-Rqh"/>
+                        <viewControllerLayoutGuide type="bottom" id="ixY-yK-qMf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7bM-k1-uc2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nu3-Nx-UDD">
+                                <rect key="frame" x="0.0" y="71" width="375" height="369"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="0PO-8l-Ncg" customClass="attemptscell" customModule="BibleBooks" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0PO-8l-Ncg" id="JCZ-J8-sq9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Vna-f5-NRm" id="rD1-Dl-bQD"/>
+                                    <outlet property="delegate" destination="Vna-f5-NRm" id="VO5-x7-fFp"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="42I-Uy-zfX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Attempts Tracker" id="bjL-It-EOX">
+                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="deF-7f-u09">
+                                            <connections>
+                                                <action selector="LogoutButtonPressed:" destination="Vna-f5-NRm" id="xdr-Qf-axt"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgv-pW-6Eq">
+                                <rect key="frame" x="0.0" y="467" width="375" height="34"/>
+                                <state key="normal" title="Save Attempts"/>
+                                <connections>
+                                    <action selector="SaveAttempts:" destination="Vna-f5-NRm" eventType="touchUpInside" id="2ti-Fc-4dX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="AttemptsTable" destination="Nu3-Nx-UDD" id="Qad-eM-QjL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcz-AR-pAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94.5" y="-381.5"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="T8J-Bn-7Ma">
+            <objects>
+                <viewController id="Fkr-pQ-K1L" customClass="LoginVC" customModule="BibleBooks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pAT-a5-cO6"/>
+                        <viewControllerLayoutGuide type="bottom" id="AwG-wg-iY2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qhN-4Y-L7E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ZB-b3-Sq3">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="LoginVC" id="z3S-HC-ug2">
+                                        <barButtonItem key="leftBarButtonItem" title="register" id="4Am-5a-RwO">
+                                            <connections>
+                                                <segue destination="aKp-fc-KSJ" kind="show" id="f56-iU-LHb"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="login" id="Zpn-tZ-XYe">
+                                            <connections>
+                                                <action selector="loginButtonPressed:" destination="Fkr-pQ-K1L" id="7xO-Gy-XEc"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O07-6U-fmq">
+                                <rect key="frame" x="20" y="124" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qLv-Wf-baW">
+                                <rect key="frame" x="20" y="170" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="passwordTF" destination="qLv-Wf-baW" id="Bvs-zz-Qz3"/>
+                        <outlet property="usernameTF" destination="O07-6U-fmq" id="3GZ-vj-hzc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZZb-ze-jSj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-306.5" y="327.5"/>
+        </scene>
+    </scenes>
+</document>

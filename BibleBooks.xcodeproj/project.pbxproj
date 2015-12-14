@@ -1,0 +1,911 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7F3F27223B5819F245031EB /* Pods_BibleBooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E0E445462A760F7B9A8E97 /* Pods_BibleBooks.framework */; };
+		B88DCB951C1F184C00553071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88DCB941C1F184C00553071 /* AppDelegate.swift */; };
+		B88DCB9A1C1F184C00553071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88DCB981C1F184C00553071 /* Main.storyboard */; };
+		B88DCB9C1C1F184C00553071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88DCB9B1C1F184C00553071 /* Assets.xcassets */; };
+		B88DCB9F1C1F184C00553071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88DCB9D1C1F184C00553071 /* LaunchScreen.storyboard */; };
+		B88DCBAA1C1F184C00553071 /* BibleBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88DCBA91C1F184C00553071 /* BibleBooksTests.swift */; };
+		B88DCBB51C1F184C00553071 /* BibleBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88DCBB41C1F184C00553071 /* BibleBooksUITests.swift */; };
+		B88DCBBA1C1F184C00553071 /* BibleBooks WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B88DCBB91C1F184C00553071 /* BibleBooks WatchKit App.app */; };
+		B88DCBC01C1F184C00553071 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88DCBBE1C1F184C00553071 /* Interface.storyboard */; };
+		B88DCBC21C1F184C00553071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88DCBC11C1F184C00553071 /* Assets.xcassets */; };
+		B88DCBC91C1F184C00553071 /* BibleBooks WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B88DCBC81C1F184C00553071 /* BibleBooks WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B88DCBD01C1F184C00553071 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88DCBCF1C1F184C00553071 /* InterfaceController.swift */; };
+		B88DCBD21C1F184C00553071 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88DCBD11C1F184C00553071 /* ExtensionDelegate.swift */; };
+		B88DCBD41C1F184C00553071 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88DCBD31C1F184C00553071 /* NotificationController.swift */; };
+		B88DCBD61C1F184C00553071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88DCBD51C1F184C00553071 /* Assets.xcassets */; };
+		B88DCBF11C1F1D9E00553071 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88DCBEF1C1F1D9E00553071 /* LoginVC.swift */; };
+		B88DCBF21C1F1D9E00553071 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88DCBF01C1F1D9E00553071 /* RegisterVC.swift */; };
+		B88DCBF41C1F1E8400553071 /* PhoneCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88DCBF31C1F1E8400553071 /* PhoneCore.swift */; };
+		F74685AD1C1F4FEA001F5B8E /* MainScreenICInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74685AC1C1F4FEA001F5B8E /* MainScreenICInterfaceController.swift */; };
+		F74685AF1C1F5020001F5B8E /* PickerScreenIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74685AE1C1F5020001F5B8E /* PickerScreenIC.swift */; };
+		F74685B11C1F50F3001F5B8E /* WatchSinglton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74685B01C1F50F3001F5B8E /* WatchSinglton.swift */; };
+		F74685B31C1F515A001F5B8E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74685B21C1F515A001F5B8E /* Parse.framework */; };
+		F74685B51C1F515D001F5B8E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74685B41C1F515D001F5B8E /* Bolts.framework */; };
+		F74685B71C1F5225001F5B8E /* AttemptsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74685B61C1F5225001F5B8E /* AttemptsVC.swift */; };
+		F74685B91C1F5527001F5B8E /* attemptscell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74685B81C1F5527001F5B8E /* attemptscell.swift */; };
+		F74685BD1C1F5729001F5B8E /* verserow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74685BC1C1F5729001F5B8E /* verserow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B88DCBA61C1F184C00553071 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B88DCB891C1F184C00553071 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B88DCB901C1F184C00553071;
+			remoteInfo = BibleBooks;
+		};
+		B88DCBB11C1F184C00553071 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B88DCB891C1F184C00553071 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B88DCB901C1F184C00553071;
+			remoteInfo = BibleBooks;
+		};
+		B88DCBBB1C1F184C00553071 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B88DCB891C1F184C00553071 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B88DCBB81C1F184C00553071;
+			remoteInfo = "BibleBooks WatchKit App";
+		};
+		B88DCBCA1C1F184C00553071 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B88DCB891C1F184C00553071 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B88DCBC71C1F184C00553071;
+			remoteInfo = "BibleBooks WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B88DCBDD1C1F184C00553071 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B88DCBC91C1F184C00553071 /* BibleBooks WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88DCBE11C1F184C00553071 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B88DCBBA1C1F184C00553071 /* BibleBooks WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		74CA0EAC7942DEA7D3CC037D /* Pods-BibleBooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleBooks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BibleBooks/Pods-BibleBooks.debug.xcconfig"; sourceTree = "<group>"; };
+		81E0E445462A760F7B9A8E97 /* Pods_BibleBooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BibleBooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88DCB911C1F184C00553071 /* BibleBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BibleBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88DCB941C1F184C00553071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B88DCB991C1F184C00553071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B88DCB9B1C1F184C00553071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B88DCB9E1C1F184C00553071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B88DCBA01C1F184C00553071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B88DCBA51C1F184C00553071 /* BibleBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BibleBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88DCBA91C1F184C00553071 /* BibleBooksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleBooksTests.swift; sourceTree = "<group>"; };
+		B88DCBAB1C1F184C00553071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B88DCBB01C1F184C00553071 /* BibleBooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BibleBooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88DCBB41C1F184C00553071 /* BibleBooksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleBooksUITests.swift; sourceTree = "<group>"; };
+		B88DCBB61C1F184C00553071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B88DCBB91C1F184C00553071 /* BibleBooks WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BibleBooks WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88DCBBF1C1F184C00553071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B88DCBC11C1F184C00553071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B88DCBC31C1F184C00553071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B88DCBC81C1F184C00553071 /* BibleBooks WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BibleBooks WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88DCBCE1C1F184C00553071 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B88DCBCF1C1F184C00553071 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B88DCBD11C1F184C00553071 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B88DCBD31C1F184C00553071 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B88DCBD51C1F184C00553071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B88DCBD71C1F184C00553071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B88DCBEF1C1F1D9E00553071 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		B88DCBF01C1F1D9E00553071 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		B88DCBF31C1F1E8400553071 /* PhoneCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneCore.swift; sourceTree = "<group>"; };
+		F74685AB1C1F4FE9001F5B8E /* BibleBooks WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BibleBooks WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
+		F74685AC1C1F4FEA001F5B8E /* MainScreenICInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenICInterfaceController.swift; sourceTree = "<group>"; };
+		F74685AE1C1F5020001F5B8E /* PickerScreenIC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerScreenIC.swift; sourceTree = "<group>"; };
+		F74685B01C1F50F3001F5B8E /* WatchSinglton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSinglton.swift; sourceTree = "<group>"; };
+		F74685B21C1F515A001F5B8E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "Pods/../build/Debug-iphoneos/Parse.framework"; sourceTree = "<group>"; };
+		F74685B41C1F515D001F5B8E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "Pods/../build/Debug-iphoneos/Bolts.framework"; sourceTree = "<group>"; };
+		F74685B61C1F5225001F5B8E /* AttemptsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttemptsVC.swift; sourceTree = "<group>"; };
+		F74685B81C1F5527001F5B8E /* attemptscell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = attemptscell.swift; sourceTree = "<group>"; };
+		F74685BC1C1F5729001F5B8E /* verserow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = verserow.swift; sourceTree = "<group>"; };
+		FED0D19C7EF397E98D96660B /* Pods-BibleBooks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BibleBooks.release.xcconfig"; path = "Pods/Target Support Files/Pods-BibleBooks/Pods-BibleBooks.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B88DCB8E1C1F184C00553071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74685B51C1F515D001F5B8E /* Bolts.framework in Frameworks */,
+				F74685B31C1F515A001F5B8E /* Parse.framework in Frameworks */,
+				A7F3F27223B5819F245031EB /* Pods_BibleBooks.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88DCBA21C1F184C00553071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88DCBAD1C1F184C00553071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88DCBC51C1F184C00553071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2724D9E736EB294071C36A7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F74685B41C1F515D001F5B8E /* Bolts.framework */,
+				F74685B21C1F515A001F5B8E /* Parse.framework */,
+				81E0E445462A760F7B9A8E97 /* Pods_BibleBooks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B2C8A1B17B820C2237B5AFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74CA0EAC7942DEA7D3CC037D /* Pods-BibleBooks.debug.xcconfig */,
+				FED0D19C7EF397E98D96660B /* Pods-BibleBooks.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B88DCB881C1F184C00553071 = {
+			isa = PBXGroup;
+			children = (
+				B88DCB931C1F184C00553071 /* BibleBooks */,
+				B88DCBA81C1F184C00553071 /* BibleBooksTests */,
+				B88DCBB31C1F184C00553071 /* BibleBooksUITests */,
+				B88DCBBD1C1F184C00553071 /* BibleBooks WatchKit App */,
+				B88DCBCC1C1F184C00553071 /* BibleBooks WatchKit Extension */,
+				B88DCB921C1F184C00553071 /* Products */,
+				8B2C8A1B17B820C2237B5AFE /* Pods */,
+				2724D9E736EB294071C36A7D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B88DCB921C1F184C00553071 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B88DCB911C1F184C00553071 /* BibleBooks.app */,
+				B88DCBA51C1F184C00553071 /* BibleBooksTests.xctest */,
+				B88DCBB01C1F184C00553071 /* BibleBooksUITests.xctest */,
+				B88DCBB91C1F184C00553071 /* BibleBooks WatchKit App.app */,
+				B88DCBC81C1F184C00553071 /* BibleBooks WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B88DCB931C1F184C00553071 /* BibleBooks */ = {
+			isa = PBXGroup;
+			children = (
+				B88DCBEF1C1F1D9E00553071 /* LoginVC.swift */,
+				B88DCBF01C1F1D9E00553071 /* RegisterVC.swift */,
+				B88DCB941C1F184C00553071 /* AppDelegate.swift */,
+				B88DCB981C1F184C00553071 /* Main.storyboard */,
+				F74685B61C1F5225001F5B8E /* AttemptsVC.swift */,
+				F74685B81C1F5527001F5B8E /* attemptscell.swift */,
+				B88DCB9B1C1F184C00553071 /* Assets.xcassets */,
+				B88DCB9D1C1F184C00553071 /* LaunchScreen.storyboard */,
+				B88DCBA01C1F184C00553071 /* Info.plist */,
+				B88DCBF31C1F1E8400553071 /* PhoneCore.swift */,
+			);
+			path = BibleBooks;
+			sourceTree = "<group>";
+		};
+		B88DCBA81C1F184C00553071 /* BibleBooksTests */ = {
+			isa = PBXGroup;
+			children = (
+				B88DCBA91C1F184C00553071 /* BibleBooksTests.swift */,
+				B88DCBAB1C1F184C00553071 /* Info.plist */,
+			);
+			path = BibleBooksTests;
+			sourceTree = "<group>";
+		};
+		B88DCBB31C1F184C00553071 /* BibleBooksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B88DCBB41C1F184C00553071 /* BibleBooksUITests.swift */,
+				B88DCBB61C1F184C00553071 /* Info.plist */,
+			);
+			path = BibleBooksUITests;
+			sourceTree = "<group>";
+		};
+		B88DCBBD1C1F184C00553071 /* BibleBooks WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B88DCBBE1C1F184C00553071 /* Interface.storyboard */,
+				F74685AC1C1F4FEA001F5B8E /* MainScreenICInterfaceController.swift */,
+				F74685B01C1F50F3001F5B8E /* WatchSinglton.swift */,
+				B88DCBC11C1F184C00553071 /* Assets.xcassets */,
+				F74685AE1C1F5020001F5B8E /* PickerScreenIC.swift */,
+				B88DCBC31C1F184C00553071 /* Info.plist */,
+				F74685BC1C1F5729001F5B8E /* verserow.swift */,
+				F74685AB1C1F4FE9001F5B8E /* BibleBooks WatchKit App-Bridging-Header.h */,
+			);
+			path = "BibleBooks WatchKit App";
+			sourceTree = "<group>";
+		};
+		B88DCBCC1C1F184C00553071 /* BibleBooks WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B88DCBCF1C1F184C00553071 /* InterfaceController.swift */,
+				B88DCBD11C1F184C00553071 /* ExtensionDelegate.swift */,
+				B88DCBD31C1F184C00553071 /* NotificationController.swift */,
+				B88DCBD51C1F184C00553071 /* Assets.xcassets */,
+				B88DCBD71C1F184C00553071 /* Info.plist */,
+				B88DCBCD1C1F184C00553071 /* Supporting Files */,
+			);
+			path = "BibleBooks WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B88DCBCD1C1F184C00553071 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B88DCBCE1C1F184C00553071 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B88DCB901C1F184C00553071 /* BibleBooks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B88DCBE21C1F184C00553071 /* Build configuration list for PBXNativeTarget "BibleBooks" */;
+			buildPhases = (
+				A31EAC0C8C818DBB29DD3018 /* Check Pods Manifest.lock */,
+				B88DCB8D1C1F184C00553071 /* Sources */,
+				B88DCB8E1C1F184C00553071 /* Frameworks */,
+				B88DCB8F1C1F184C00553071 /* Resources */,
+				B88DCBE11C1F184C00553071 /* Embed Watch Content */,
+				08636D711949D050BB065A16 /* Embed Pods Frameworks */,
+				F4B2D4ABD8598BF93219457C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B88DCBBC1C1F184C00553071 /* PBXTargetDependency */,
+			);
+			name = BibleBooks;
+			productName = BibleBooks;
+			productReference = B88DCB911C1F184C00553071 /* BibleBooks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B88DCBA41C1F184C00553071 /* BibleBooksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B88DCBE51C1F184C00553071 /* Build configuration list for PBXNativeTarget "BibleBooksTests" */;
+			buildPhases = (
+				B88DCBA11C1F184C00553071 /* Sources */,
+				B88DCBA21C1F184C00553071 /* Frameworks */,
+				B88DCBA31C1F184C00553071 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B88DCBA71C1F184C00553071 /* PBXTargetDependency */,
+			);
+			name = BibleBooksTests;
+			productName = BibleBooksTests;
+			productReference = B88DCBA51C1F184C00553071 /* BibleBooksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B88DCBAF1C1F184C00553071 /* BibleBooksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B88DCBE81C1F184C00553071 /* Build configuration list for PBXNativeTarget "BibleBooksUITests" */;
+			buildPhases = (
+				B88DCBAC1C1F184C00553071 /* Sources */,
+				B88DCBAD1C1F184C00553071 /* Frameworks */,
+				B88DCBAE1C1F184C00553071 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B88DCBB21C1F184C00553071 /* PBXTargetDependency */,
+			);
+			name = BibleBooksUITests;
+			productName = BibleBooksUITests;
+			productReference = B88DCBB01C1F184C00553071 /* BibleBooksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B88DCBB81C1F184C00553071 /* BibleBooks WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B88DCBDE1C1F184C00553071 /* Build configuration list for PBXNativeTarget "BibleBooks WatchKit App" */;
+			buildPhases = (
+				B88DCBB71C1F184C00553071 /* Resources */,
+				B88DCBDD1C1F184C00553071 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B88DCBCB1C1F184C00553071 /* PBXTargetDependency */,
+			);
+			name = "BibleBooks WatchKit App";
+			productName = "BibleBooks WatchKit App";
+			productReference = B88DCBB91C1F184C00553071 /* BibleBooks WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B88DCBC71C1F184C00553071 /* BibleBooks WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B88DCBDA1C1F184C00553071 /* Build configuration list for PBXNativeTarget "BibleBooks WatchKit Extension" */;
+			buildPhases = (
+				B88DCBC41C1F184C00553071 /* Sources */,
+				B88DCBC51C1F184C00553071 /* Frameworks */,
+				B88DCBC61C1F184C00553071 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BibleBooks WatchKit Extension";
+			productName = "BibleBooks WatchKit Extension";
+			productReference = B88DCBC81C1F184C00553071 /* BibleBooks WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B88DCB891C1F184C00553071 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = cuw;
+				TargetAttributes = {
+					B88DCB901C1F184C00553071 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B88DCBA41C1F184C00553071 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B88DCB901C1F184C00553071;
+					};
+					B88DCBAF1C1F184C00553071 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B88DCB901C1F184C00553071;
+					};
+					B88DCBB81C1F184C00553071 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B88DCBC71C1F184C00553071 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = B88DCB8C1C1F184C00553071 /* Build configuration list for PBXProject "BibleBooks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B88DCB881C1F184C00553071;
+			productRefGroup = B88DCB921C1F184C00553071 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B88DCB901C1F184C00553071 /* BibleBooks */,
+				B88DCBA41C1F184C00553071 /* BibleBooksTests */,
+				B88DCBAF1C1F184C00553071 /* BibleBooksUITests */,
+				B88DCBB81C1F184C00553071 /* BibleBooks WatchKit App */,
+				B88DCBC71C1F184C00553071 /* BibleBooks WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B88DCB8F1C1F184C00553071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B88DCB9F1C1F184C00553071 /* LaunchScreen.storyboard in Resources */,
+				B88DCB9C1C1F184C00553071 /* Assets.xcassets in Resources */,
+				B88DCB9A1C1F184C00553071 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88DCBA31C1F184C00553071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88DCBAE1C1F184C00553071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88DCBB71C1F184C00553071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B88DCBC21C1F184C00553071 /* Assets.xcassets in Resources */,
+				B88DCBC01C1F184C00553071 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88DCBC61C1F184C00553071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B88DCBD61C1F184C00553071 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08636D711949D050BB065A16 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BibleBooks/Pods-BibleBooks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A31EAC0C8C818DBB29DD3018 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4B2D4ABD8598BF93219457C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BibleBooks/Pods-BibleBooks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B88DCB8D1C1F184C00553071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B88DCBF21C1F1D9E00553071 /* RegisterVC.swift in Sources */,
+				F74685B91C1F5527001F5B8E /* attemptscell.swift in Sources */,
+				B88DCBF41C1F1E8400553071 /* PhoneCore.swift in Sources */,
+				B88DCB951C1F184C00553071 /* AppDelegate.swift in Sources */,
+				B88DCBF11C1F1D9E00553071 /* LoginVC.swift in Sources */,
+				F74685B71C1F5225001F5B8E /* AttemptsVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88DCBA11C1F184C00553071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B88DCBAA1C1F184C00553071 /* BibleBooksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88DCBAC1C1F184C00553071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B88DCBB51C1F184C00553071 /* BibleBooksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88DCBC41C1F184C00553071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74685BD1C1F5729001F5B8E /* verserow.swift in Sources */,
+				B88DCBD41C1F184C00553071 /* NotificationController.swift in Sources */,
+				B88DCBD21C1F184C00553071 /* ExtensionDelegate.swift in Sources */,
+				F74685AF1C1F5020001F5B8E /* PickerScreenIC.swift in Sources */,
+				F74685B11C1F50F3001F5B8E /* WatchSinglton.swift in Sources */,
+				F74685AD1C1F4FEA001F5B8E /* MainScreenICInterfaceController.swift in Sources */,
+				B88DCBD01C1F184C00553071 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B88DCBA71C1F184C00553071 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B88DCB901C1F184C00553071 /* BibleBooks */;
+			targetProxy = B88DCBA61C1F184C00553071 /* PBXContainerItemProxy */;
+		};
+		B88DCBB21C1F184C00553071 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B88DCB901C1F184C00553071 /* BibleBooks */;
+			targetProxy = B88DCBB11C1F184C00553071 /* PBXContainerItemProxy */;
+		};
+		B88DCBBC1C1F184C00553071 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B88DCBB81C1F184C00553071 /* BibleBooks WatchKit App */;
+			targetProxy = B88DCBBB1C1F184C00553071 /* PBXContainerItemProxy */;
+		};
+		B88DCBCB1C1F184C00553071 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B88DCBC71C1F184C00553071 /* BibleBooks WatchKit Extension */;
+			targetProxy = B88DCBCA1C1F184C00553071 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B88DCB981C1F184C00553071 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B88DCB991C1F184C00553071 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B88DCB9D1C1F184C00553071 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B88DCB9E1C1F184C00553071 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B88DCBBE1C1F184C00553071 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B88DCBBF1C1F184C00553071 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B88DCBD81C1F184C00553071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B88DCBD91C1F184C00553071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B88DCBDB1C1F184C00553071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "BibleBooks WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuw.BibleBooks.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		B88DCBDC1C1F184C00553071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "BibleBooks WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuw.BibleBooks.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		B88DCBDF1C1F184C00553071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = BibleBooks_WatchKit_Extension;
+				INFOPLIST_FILE = "BibleBooks WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuw.BibleBooks.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BibleBooks WatchKit App/BibleBooks WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		B88DCBE01C1F184C00553071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = BibleBooks_WatchKit_Extension;
+				INFOPLIST_FILE = "BibleBooks WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuw.BibleBooks.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BibleBooks WatchKit App/BibleBooks WatchKit App-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		B88DCBE31C1F184C00553071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74CA0EAC7942DEA7D3CC037D /* Pods-BibleBooks.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = BibleBooks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuw.BibleBooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B88DCBE41C1F184C00553071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FED0D19C7EF397E98D96660B /* Pods-BibleBooks.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = BibleBooks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuw.BibleBooks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B88DCBE61C1F184C00553071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BibleBooksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuw.BibleBooksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BibleBooks.app/BibleBooks";
+			};
+			name = Debug;
+		};
+		B88DCBE71C1F184C00553071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BibleBooksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuw.BibleBooksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BibleBooks.app/BibleBooks";
+			};
+			name = Release;
+		};
+		B88DCBE91C1F184C00553071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BibleBooksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuw.BibleBooksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BibleBooks;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B88DCBEA1C1F184C00553071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BibleBooksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuw.BibleBooksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BibleBooks;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B88DCB8C1C1F184C00553071 /* Build configuration list for PBXProject "BibleBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B88DCBD81C1F184C00553071 /* Debug */,
+				B88DCBD91C1F184C00553071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B88DCBDA1C1F184C00553071 /* Build configuration list for PBXNativeTarget "BibleBooks WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B88DCBDB1C1F184C00553071 /* Debug */,
+				B88DCBDC1C1F184C00553071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B88DCBDE1C1F184C00553071 /* Build configuration list for PBXNativeTarget "BibleBooks WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B88DCBDF1C1F184C00553071 /* Debug */,
+				B88DCBE01C1F184C00553071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B88DCBE21C1F184C00553071 /* Build configuration list for PBXNativeTarget "BibleBooks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B88DCBE31C1F184C00553071 /* Debug */,
+				B88DCBE41C1F184C00553071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B88DCBE51C1F184C00553071 /* Build configuration list for PBXNativeTarget "BibleBooksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B88DCBE61C1F184C00553071 /* Debug */,
+				B88DCBE71C1F184C00553071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B88DCBE81C1F184C00553071 /* Build configuration list for PBXNativeTarget "BibleBooksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B88DCBE91C1F184C00553071 /* Debug */,
+				B88DCBEA1C1F184C00553071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B88DCB891C1F184C00553071 /* Project object */;
+}

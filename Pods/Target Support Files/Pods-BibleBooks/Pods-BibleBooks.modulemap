@@ -1,0 +1,6 @@
+framework module Pods_BibleBooks {
+  umbrella header "Pods-BibleBooks-umbrella.h"
+
+  export *
+  module * { export * }
+}
